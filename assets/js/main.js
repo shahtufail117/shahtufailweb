@@ -53,7 +53,10 @@
                 $('.demo-modal-area').removeClass('open');
             })
         },
-
+        
+   contactForm: function () {
+          
+                                    },
               
         wowActive: function () {
             new WOW().init();
