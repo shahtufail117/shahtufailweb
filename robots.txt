@@ -11,6 +11,22 @@ User-agent: Claude-Web
 Allow: /
 Allow: /llms.txt
 
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+
 User-agent: CCBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+
+User-agent: Applebot-Extended
 Allow: /
 Allow: /llms.txt
