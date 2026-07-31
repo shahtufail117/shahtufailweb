@@ -1,3 +1,16 @@
 User-agent: *
 Allow: /
 Sitemap: https://shahtufail.com.np/sitemap.xml
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+
+User-agent: CCBot
+Allow: /
+Allow: /llms.txt
