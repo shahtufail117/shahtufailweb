@@ -1,0 +1,168 @@
+# Tufail Shah - Graphic Designer & Marketer (Full Site Index)
+
+> Complete text content of https://shahtufail.com.np — home, services, portfolio, experience, and all blog articles. This file exists so search engines and AI crawlers can index the full site from a single document.
+
+## About
+
+Hi, I'm Tufail Shah - a Graphic Designer & Marketer helping businesses stand out and grow through powerful design across multiple mediums. 7+ years of experience in campaign design, social media, and brand identity.
+
+## Services
+
+- **Campaign Designs** - Run successful campaigns that promote business sales across different media platforms.
+- **Social Media Posts** - Make your social media pages stand out with designs that generate sales and engagement.
+- **Mockup Designs** - Quickly evaluate marketing decisions with clear, visual mockups and iterative designs.
+- **Newsletters** - Email designs that stand out and drive clicks to promote your products effectively.
+- **Packaging Design** - Packaging that talks about your product positively and captures attention on shelves.
+- **Illustrations** - Custom illustrations that tell your story and connect with your audience.
+
+## Skills & Tools
+
+- **Photoshop** - Expert
+- **Illustrator** - Expert
+- **DaVinci Resolve** - Advanced
+- **Canva** - Advanced
+- **Affinity** - Expert
+- **Figma** - Advanced
+
+## Portfolio
+
+### Designs
+- Designs for Foodmandu - Social Media, Newsletters, Web and Mockups
+- Designs for Kirana - Social Media, Web, Print, Mockups and Ads
+- Designs for Lotao - Web designs, Mockups, Catalog and Prints
+
+### Certificates
+- Photoshop Mastery Certificate - LinkedIn Learning
+- Illustrator Mastery Certificate - LinkedIn Learning
+- Video Editing in DaVinci Resolve - Udemy
+- Canva Editing of Designs - Udemy
+
+## Experience
+
+### Education
+- **B.B.A in Banking & Finance** - People's Campus (2011-2015). GPA: 3.53/4
+
+### Job Experience
+- **Senior Designer** at Fonepoints (2025-Present) - Campaign designs, Branding, Social Media, Print, Ads
+- **Mid-Level Graphic Designer** at Daraz Nepal (Mid 2023-2024)
+- **Freelance Designer** at Lotao GmbH (Late 2021-Present) - Mockups, Packaging, Catalogs, Fliers, Web design
+- **Designer** at Mero Kirana (2020-2022) - Campaign designs, Social media, Print, Events, Web
+- **Designer** at Foodmandu (Late 2018-2020) - Campaign designs for festivals, Social media, Print, Web
+
+## Brands Worked With
+
+Foodmandu, Kirana, Lotao GmbH, Daraz Nepal
+
+## Blog Articles (Full Text)
+
+### The global memory shortage hits the MacBook Air
+
+Source: TechCrunch · Author: Anthony Ha · Published Aug 2, 2026 · 3 min read
+URL: https://shahtufail.com.np/blog/article-macbook-air.html
+
+The global memory chip shortage is affecting the availability of Apple's most popular Mac, according to Bloomberg's Mark Gurman.
+
+Gurman said the shortage - caused by the demands of chip-hungry AI companies - had already affected Apple's more niche computers, the Mac mini and Mac Studio. But it seems the company is now struggling to keep the MacBook Air in stock, with retailers saying that supply seems to be more constrained than ever before.
+
+Indeed, anyone trying to buy a MacBook Air from the Apple website will have to wait until the back half of August - or for certain configurations, until September.
+
+Gurman says Apple is working to address the issue by raising prices and sourcing memory from Chinese suppliers. Meanwhile, the company delayed its latest back-to-school promotion from June. And for the first time, the marketing material is more focused on the base model of the MacBook Pro. It even warns, "MacBook Air subject to availability."
+
+The memory shortage is being driven by surging demand from the AI industry, which has pushed up prices for RAM and storage chips across the tech sector. Apple has been far from alone in feeling the impact, but the MacBook Air being affected is significant given that it remains the company's most popular laptop line.
+
+---
+
+### Apps that help you break free from doomscrolling and get active
+
+Source: TechCrunch · Author: Lauren Forristal · Published Aug 1, 2026 · 4 min read
+URL: https://shahtufail.com.np/blog/article-doomscroll-apps.html
+
+Doomscrolling can be addictive. It's common to end up on the couch for hours, mindlessly scrolling through feeds, which inevitably messes up your posture and, in the end, just ends up making you feel bad about yourself. Your eyes definitely don't like it, either.
+
+Fortunately, there are several apps that encourage you to get up and move before you dive into social media. There's even one that literally has you go outside and touch grass before you can scroll TikTok or Instagram.
+
+So, if you're looking to cut back on screen time and be a little more active, here's a roundup of some apps that can help.
+
+#### Digital Carrot
+
+Digital Carrot blocks distracting apps, websites and games until you meet your daily fitness, productivity or screen time goals. It connects to wearables like the Apple Watch, and you can set personalized targets, say walking 6,000 steps a day. It also supports GPS- and time-based challenges, allowing users to block apps until they spend a certain amount of time at a specific location, such as completing a 60-minute workout at the gym.
+
+#### StepBloc
+
+StepBloc lets you lock access to apps until you walk a number of steps you can specify. In addition, you can also link app access to completing specific workouts, such as push-ups, planks or squats for a specified amount of time. Once the workout is completed, the user can access selected apps like Instagram, TikTok, YouTube or games.
+
+#### Steppin
+
+Created by the founder of Kayak, Steppin lets you trade physical movement for screen time. For example, it allows you to reward yourself with one minute of scrolling for every 100 steps you take. You have the flexibility to set your own step goals for accessing social media, streaming services or mobile games.
+
+#### TouchGrass
+
+TouchGrass brings a unique twist to preventing doomscrolling habits by requiring you to step outside and take a photo of grass to unlock distracting apps. The app uses computer vision models to scan photos, and it will only accept images of grass (not trees or other plants).
+
+#### WalkLock, Walkly & WeWard
+
+WalkLock integrates with Apple Health to limit access to designated apps until you meet your daily step goal, and offers a lockscreen widget that displays your progress. Walkly is an Android app that provides a similar experience. WeWard, meanwhile, initially launched as an app that incentivized walking by awarding users "Wards," an in-app currency that can be exchanged for cash or gift cards - and it recently introduced a "Walking Mode" that restricts app access until you hit specific step counts.
+
+---
+
+### Is paying artists enough to convince them to embrace AI?
+
+Source: The Verge · Author: Charles Pulliam-Moore · Published Aug 2, 2026 · 6 min read
+URL: https://shahtufail.com.np/blog/article-pippa-ai.html
+
+Illustrators have spent years sounding the alarm about generative artificial intelligence startups training their models on artists' work without permission. They've pointed out how the practice is tantamount to theft, and in response, many gen AI boosters have argued that it's necessary for the technology's evolution. This has led to contentious legal battles, but it's also given rise to a new wave of AI startups like Pippa that market their services as being more ethical than the competition.
+
+Like most companies selling access to text-to-video models, Pippa's main product is short bursts of user-generated footage that can be cobbled together to tell visual stories. But what sets Pippa apart from other players in the gen AI video space is the way its business model is designed to pay artists directly. Every time a Pippa subscriber generates an image or a video clip whose style is derived from a human artist's work, that artist is compensated by the platform.
+
+Pippa's cofounders, Hogan Shrum and Sean Wright, think that their focus on working with artists is what will attract customers. They also believe that their company will prove that AI firms can generate content ethically. But Pippa faces an uphill battle as it seeks to convince artists. Even as it tries to create an ethical spin on AI video generation, the company is still getting off the ground with the same sloppy models that other text-to-video services offer.
+
+> "All of these models from the past 18 months have been trained on real people's art without their permission - that's how it was built." - Sean Wright, Pippa cofounder
+
+Pippa's payments to artists aren't very large on an individual basis. The company says that artists receive $0.005 per image and $0.003 per second of video. The more generations a user makes, the larger an artist's payments become, and Pippa also gives them access to a cut of a 5 percent royalty pool that's funded by the platform's overall subscription revenue.
+
+#### Still built on scraped art
+
+Though Pippa hopes to fully switch to models that are trained on datasets provided by its in-house artists, that technology is still built with open models that the company says "have initial training on the broader set of content out there." Put more bluntly, Pippa's tech still involves some degree of using art that was scraped from the internet without creators' express consent. The company's intentions may be good, but it doesn't exactly have a way to completely solve for the creative theft that's inherent to gen AI.
+
+Shrum and Wright believe that they will find more artists to work with, and that using Pippa will convince them to sell their communities on the idea of joining as well. In order for that to happen, though, public opinion about whether people really want to use gen AI would need to shift back in the technology's favor.
+
+---
+
+### Pixel 11 specs and price leak with no surprises
+
+Source: The Verge · Author: Terrence O'Brien · Published Aug 1, 2026 · 3 min read
+URL: https://shahtufail.com.np/blog/article-pixel-11.html
+
+Android Headlines claims to have the specs and price for the entire Pixel 11 lineup. What the site shared basically lines up with everything else that we've heard in the lead-up to the August 12th event.
+
+The Pixel 11 is expected to get a $100 price hike, starting at $899, but will come with 256GB of storage instead of 128GB in the base model. While the entire lineup will sport the new Tensor G6 and Titan M3 chips, the base model Pixel 11 Pro and Pixel 11 Pro XL are both getting that rumored RAM cut to just 12GB, along with price increases to $1,099 and $1,299, respectively.
+
+The Pixel 11 will supposedly ditch the telephoto lens and settle for a dual rear camera setup instead. The pro models appear like they'll keep the same camera setup from the Pixel 10 lineup. The displays also seem to be largely unchanged from the previous generation.
+
+The Pixel 11 Pro Fold wasn't immune to RAMageddon, either, and will also start with 12GB of RAM and a new price of $1,899.
+
+- **Pixel 11:** $899, 256GB storage, dual rear camera
+- **Pixel 11 Pro:** $1,099, 12GB RAM
+- **Pixel 11 Pro XL:** $1,299, 12GB RAM
+- **Pixel 11 Pro Fold:** $1,899, 12GB RAM
+
+The price increases across the lineup are being driven by the ongoing memory shortage, which has sent RAM and storage costs soaring across the industry.
+
+---
+
+## Contact
+
+- **Phone:** +977-9803886597
+- **Email:** purpleghostdesign@gmail.com
+- **Upwork:** https://www.upwork.com/freelancers/tufailshah5
+- **Fiverr:** https://www.fiverr.com/tufail117
+- **LinkedIn:** https://www.linkedin.com/in/shahtufail117/
+
+## Sitemap
+
+- https://shahtufail.com.np/
+- https://shahtufail.com.np/blog.html
+- https://shahtufail.com.np/blog/article-macbook-air.html
+- https://shahtufail.com.np/blog/article-doomscroll-apps.html
+- https://shahtufail.com.np/blog/article-pippa-ai.html
+- https://shahtufail.com.np/blog/article-pixel-11.html

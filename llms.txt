@@ -2,6 +2,11 @@
 
 > Crafting visual stories that drive results. 7+ years of experience in campaign design, social media, and brand identity.
 
+## Full text index
+
+Read the complete site content (home, portfolio, experience, and all blog article full texts) in a single document:
+[llms-full.txt](https://shahtufail.com.np/llms-full.txt)
+
 ## About
 
 Hi, I'm Tufail Shah — a Graphic Designer & Marketer helping businesses stand out and grow through powerful design across multiple mediums.
