@@ -1,0 +1,5 @@
+# Security contact information for shahtufail.com.np
+Contact: mailto:purpleghostdesign@gmail.com
+Expires: 2030-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://shahtufail.com.np/.well-known/security.txt
