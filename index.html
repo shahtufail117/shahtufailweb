@@ -106,7 +106,7 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'nonce-zISiXUkWC3pcmYNl9JrQLuxQ'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; form-action 'self' mailto:; base-uri 'self'; frame-ancestors 'none'; require-trusted-types-for 'script'"
+      content="default-src 'self'; script-src 'self' 'nonce-zISiXUkWC3pcmYNl9JrQLuxQ'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action 'self' mailto: https://formspree.io; base-uri 'self'; frame-ancestors 'none'; require-trusted-types-for 'script'"
     />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta
@@ -2533,7 +2533,12 @@
             </div>
           </div>
         </div>
-        <form class="fade-up contact-glass" id="contactForm">
+        <form
+          class="fade-up contact-glass"
+          id="contactForm"
+          action="https://formspree.io/f/xzdnnvqd"
+          method="POST"
+        >
           <div class="form-group">
             <label for="name">Your Name</label>
             <input id="name" name="name" required />
@@ -2685,23 +2690,45 @@
         .getElementById("contactForm")
         .addEventListener("submit", function (e) {
           e.preventDefault();
-          const t = encodeURIComponent(document.getElementById("name").value),
-            n = encodeURIComponent(document.getElementById("email").value),
-            o = encodeURIComponent(
-              document.getElementById("subject").value || "Portfolio Inquiry",
-            ),
-            s = encodeURIComponent(document.getElementById("message").value),
-            a = `Name: ${decodeURIComponent(t)}%0D%0AEmail: ${decodeURIComponent(n)}%0D%0A%0D%0AMessage:%0D%0A${decodeURIComponent(s)}`,
-            c = document.getElementById("formStatus");
-          (window.location.href = `mailto:purpleghostdesign@gmail.com?subject=${o}&body=${a}`),
-            (c.textContent =
-              "Thank you! Your email client should open to complete sending."),
-            (c.style.display = "block"),
-            (c.style.color = "#22c55e"),
-            this.reset(),
-            setTimeout(() => {
-              c.style.display = "none";
-            }, 5e3);
+          const c = document.getElementById("formStatus"),
+            btn = this.querySelector('button[type="submit"]');
+          btn.disabled = true;
+          fetch(this.action, {
+            method: "POST",
+            body: new FormData(this),
+            headers: { Accept: "application/json" },
+          })
+            .then((r) => {
+              if (!r.ok) throw new Error("status:" + r.status);
+              return r.json();
+            })
+            .then(() => {
+              (c.textContent = "Thank you! Your message has been sent."),
+                (c.style.color = "#22c55e"),
+                (c.style.display = "block"),
+                this.reset();
+            })
+            .catch((err) => {
+              if (err.message && err.message.indexOf("status:") === 0) {
+                c.textContent =
+                  "FormSpree rejected the submission (HTTP " +
+                  err.message.slice(7) +
+                  "). Please verify the form is active in your FormSpree dashboard.";
+                c.style.color = "#ef4444";
+                c.style.display = "block";
+                btn.disabled = false;
+              } else {
+                c.textContent =
+                  "Opening FormSpree to finish sending your message...";
+                c.style.display = "block";
+                setTimeout(() => {
+                  this.submit();
+                }, 500);
+              }
+            });
+          setTimeout(() => {
+            c.style.display = "none";
+          }, 8e3);
         });
     const filterBtns = document.querySelectorAll(".portfolio-filter button"),
       portfolioCards = document.querySelectorAll(".portfolio-card");
