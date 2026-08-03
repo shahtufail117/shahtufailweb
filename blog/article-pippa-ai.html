@@ -99,6 +99,8 @@
       --footer-color: #808080;
       --sc-track: #202020;
       --sc-thumb: rgba(255, 255, 255, 0.12);
+      --dialog-bg: rgba(36, 36, 36, 0.95);
+      --dialog-border: rgba(255, 255, 255, 0.08);
       --backdrop-bg: rgba(0, 0, 0, 0.6);
       --shadow: rgba(0, 0, 0, 0.25);
       --accent: #e06860;
@@ -133,6 +135,8 @@
       --footer-color: #6b7280;
       --sc-track: #ffffff;
       --sc-thumb: rgba(17, 24, 39, 0.12);
+      --dialog-bg: rgba(255, 255, 255, 0.97);
+      --dialog-border: rgba(17, 24, 39, 0.08);
       --backdrop-bg: rgba(22, 33, 62, 0.5);
       --shadow: rgba(0, 0, 0, 0.08);
       --accent: #e06860;
@@ -623,6 +627,107 @@
         font-size: 16px;
       }
     }
+    #slackBtn {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #4a154b;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(74, 21, 75, 0.35);
+      transition: 0.3s;
+    }
+    #slackBtn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px 30px rgba(74, 21, 75, 0.5);
+    }
+    #slackBtn:active {
+      transform: scale(0.93);
+    }
+    @media (max-width: 576px) {
+      #slackBtn {
+        bottom: 20px;
+        left: 20px;
+        width: 44px;
+        height: 44px;
+      }
+    }
+    #slackPopup {
+      position: fixed;
+      bottom: 96px;
+      left: 30px;
+      width: 300px;
+      background: var(--dialog-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--dialog-border);
+      border-radius: 14px;
+      box-shadow: 0 16px 48px var(--shadow);
+      z-index: 998;
+      display: none;
+      overflow: hidden;
+      animation: dialog-in 0.25s ease-out;
+    }
+    #slackPopup.show {
+      display: block;
+    }
+    #slackPopupHeader {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      background: #4a154b;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    #slackPopupHeader span:last-child {
+      margin-left: auto;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 1;
+      opacity: 0.8;
+    }
+    #slackPopupHeader span:last-child:hover {
+      opacity: 1;
+    }
+    #slackPopupBody {
+      padding: 16px;
+    }
+    #slackPopupBody p {
+      font-size: 13px;
+      color: var(--text-sec);
+      margin-bottom: 12px;
+    }
+    #slackPopupBody .btn {
+      margin-top: 4px;
+    }
+    @media (max-width: 576px) {
+      #slackPopup {
+        left: 16px;
+        right: 16px;
+        width: auto;
+        bottom: 80px;
+      }
+    }
+    @keyframes dialog-in {
+      from {
+        opacity: 0;
+        transform: scale(0.88);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -760,6 +865,33 @@
       </div>
     </section>
   </main>
+  <div id="slackPopup">
+    <div id="slackPopupHeader">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+        <path
+          d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.958 8.834a2.528 2.528 0 0 1 2.521-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.521 2.521h-2.52V8.834zM17.687 8.834a2.528 2.528 0 0 1-2.521 2.521 2.528 2.528 0 0 1-2.521-2.521V2.522A2.528 2.528 0 0 1 15.166 0a2.528 2.528 0 0 1 2.521 2.522v6.312zM15.166 18.958a2.528 2.528 0 0 1 2.521 2.521A2.528 2.528 0 0 1 15.166 24a2.528 2.528 0 0 1-2.521-2.521v-2.521h2.521zM15.166 17.687a2.528 2.528 0 0 1-2.521-2.521 2.528 2.528 0 0 1 2.521-2.521h6.312A2.528 2.528 0 0 1 24 15.166a2.528 2.528 0 0 1-2.521 2.521h-6.313z"
+        />
+      </svg>
+      <span>Chat on Slack</span> <span id="slackPopupClose">&times;</span>
+    </div>
+    <div id="slackPopupBody">
+      <p>Hi! Join me on Slack to chat directly. I'll get back to you there.</p>
+      <button
+        id="slackJoin"
+        class="btn btn-primary"
+        style="width: 100%; justify-content: center"
+      >
+        Join Slack &#8594;
+      </button>
+    </div>
+  </div>
+  <button id="slackBtn" aria-label="Chat on Slack">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+      <path
+        d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.958 8.834a2.528 2.528 0 0 1 2.521-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.521 2.521h-2.52V8.834zM17.687 8.834a2.528 2.528 0 0 1-2.521 2.521 2.528 2.528 0 0 1-2.521-2.521V2.522A2.528 2.528 0 0 1 15.166 0a2.528 2.528 0 0 1 2.521 2.522v6.312zM15.166 18.958a2.528 2.528 0 0 1 2.521 2.521A2.528 2.528 0 0 1 15.166 24a2.528 2.528 0 0 1-2.521-2.521v-2.521h2.521zM15.166 17.687a2.528 2.528 0 0 1-2.521-2.521 2.528 2.528 0 0 1 2.521-2.521h6.312A2.528 2.528 0 0 1 24 15.166a2.528 2.528 0 0 1-2.521 2.521h-6.313z"
+      />
+    </svg>
+  </button>
   <button id="backToTop" aria-label="Back to top">
     <svg
       width="18"
@@ -839,6 +971,25 @@
         );
       });
     }
+    const SLACK_URL =
+      "https://join.slack.com/t/personal-u2t4962/shared_invite/zt-45nfzkirn-_Z0o0svM~vTZ81na9oQ6PA";
+    const slBtn = document.getElementById("slackBtn"),
+      slPopup = document.getElementById("slackPopup"),
+      slClose = document.getElementById("slackPopupClose"),
+      slJoin = document.getElementById("slackJoin");
+    slBtn.addEventListener("click", () => {
+      slPopup.classList.toggle("show");
+    }),
+      slClose.addEventListener("click", () => slPopup.classList.remove("show")),
+      slJoin.addEventListener("click", () => {
+        window.open(SLACK_URL, "_blank", "noopener,noreferrer"),
+          slPopup.classList.remove("show");
+      }),
+      document.addEventListener("click", (e) => {
+        e.target.closest("#slackPopup") ||
+          e.target.closest("#slackBtn") ||
+          slPopup.classList.remove("show");
+      });
   </script>
   </body>
 </html>

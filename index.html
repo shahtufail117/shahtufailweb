@@ -1459,14 +1459,14 @@
         font-size: 16px;
       }
     }
-    #whatsappBtn {
+    #slackBtn {
       position: fixed;
       bottom: 30px;
       left: 30px;
       width: 52px;
       height: 52px;
       border-radius: 50%;
-      background: #25d366;
+      background: #4a154b;
       color: #fff;
       border: none;
       cursor: pointer;
@@ -1474,25 +1474,25 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+      box-shadow: 0 4px 20px rgba(74, 21, 75, 0.35);
       transition: 0.3s;
     }
-    #whatsappBtn:hover {
+    #slackBtn:hover {
       transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+      box-shadow: 0 8px 30px rgba(74, 21, 75, 0.5);
     }
-    #whatsappBtn:active {
+    #slackBtn:active {
       transform: scale(0.93);
     }
     @media (max-width: 576px) {
-      #whatsappBtn {
+      #slackBtn {
         bottom: 20px;
         left: 20px;
         width: 44px;
         height: 44px;
       }
     }
-    #whatsappPopup {
+    #slackPopup {
       position: fixed;
       bottom: 96px;
       left: 30px;
@@ -1508,58 +1508,42 @@
       overflow: hidden;
       animation: dialog-in 0.25s ease-out;
     }
-    #whatsappPopup.show {
+    #slackPopup.show {
       display: block;
     }
-    #whatsappPopupHeader {
+    #slackPopupHeader {
       display: flex;
       align-items: center;
       gap: 10px;
       padding: 14px 16px;
-      background: #25d366;
+      background: #4a154b;
       color: #fff;
       font-size: 14px;
       font-weight: 600;
     }
-    #whatsappPopupHeader span:last-child {
+    #slackPopupHeader span:last-child {
       margin-left: auto;
       cursor: pointer;
       font-size: 20px;
       line-height: 1;
       opacity: 0.8;
     }
-    #whatsappPopupHeader span:last-child:hover {
+    #slackPopupHeader span:last-child:hover {
       opacity: 1;
     }
-    #whatsappPopupBody {
+    #slackPopupBody {
       padding: 16px;
     }
-    #whatsappPopupBody p {
+    #slackPopupBody p {
       font-size: 13px;
       color: var(--text-sec);
       margin-bottom: 12px;
     }
-    #whatsappPopupBody textarea {
-      width: 100%;
-      padding: 10px 14px;
-      border-radius: 10px;
-      border: 1px solid var(--card-border);
-      background: var(--form-input-bg);
-      color: var(--form-input-color);
-      font-family: Inter, sans-serif;
-      font-size: 14px;
-      resize: none;
-      outline: 0;
-      transition: 0.3s;
-    }
-    #whatsappPopupBody textarea:focus {
-      border-color: #25d366;
-    }
-    #whatsappPopupBody .btn {
-      margin-top: 10px;
+    #slackPopupBody .btn {
+      margin-top: 4px;
     }
     @media (max-width: 576px) {
-      #whatsappPopup {
+      #slackPopup {
         left: 16px;
         right: 16px;
         width: auto;
@@ -2583,35 +2567,30 @@
     </div>
   </section>
   </main>
-  <div id="whatsappPopup">
-    <div id="whatsappPopupHeader">
+  <div id="slackPopup">
+    <div id="slackPopupHeader">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
         <path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.958 8.834a2.528 2.528 0 0 1 2.521-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.521 2.521h-2.52V8.834zM17.687 8.834a2.528 2.528 0 0 1-2.521 2.521 2.528 2.528 0 0 1-2.521-2.521V2.522A2.528 2.528 0 0 1 15.166 0a2.528 2.528 0 0 1 2.521 2.522v6.312zM15.166 18.958a2.528 2.528 0 0 1 2.521 2.521A2.528 2.528 0 0 1 15.166 24a2.528 2.528 0 0 1-2.521-2.521v-2.521h2.521zM15.166 17.687a2.528 2.528 0 0 1-2.521-2.521 2.528 2.528 0 0 1 2.521-2.521h6.312A2.528 2.528 0 0 1 24 15.166a2.528 2.528 0 0 1-2.521 2.521h-6.313z"
         />
       </svg>
-      <span>Chat on WhatsApp</span> <span id="whatsappPopupClose">&times;</span>
+      <span>Chat on Slack</span> <span id="slackPopupClose">&times;</span>
     </div>
-    <div id="whatsappPopupBody">
-      <p>Hi! Leave a message and I'll get back to you.</p>
-      <textarea
-        id="whatsappMsg"
-        placeholder="Type your message..."
-        rows="3"
-      ></textarea>
+    <div id="slackPopupBody">
+      <p>Hi! Join me on Slack to chat directly. I'll get back to you there.</p>
       <button
-        id="whatsappSend"
+        id="slackJoin"
         class="btn btn-primary"
         style="width: 100%; justify-content: center"
       >
-        Send &#8594;
+        Join Slack &#8594;
       </button>
     </div>
   </div>
-  <button id="whatsappBtn" aria-label="Chat on WhatsApp">
+  <button id="slackBtn" aria-label="Chat on Slack">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
       <path
-        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.958 8.834a2.528 2.528 0 0 1 2.521-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.521 2.521h-2.52V8.834zM17.687 8.834a2.528 2.528 0 0 1-2.521 2.521 2.528 2.528 0 0 1-2.521-2.521V2.522A2.528 2.528 0 0 1 15.166 0a2.528 2.528 0 0 1 2.521 2.522v6.312zM15.166 18.958a2.528 2.528 0 0 1 2.521 2.521A2.528 2.528 0 0 1 15.166 24a2.528 2.528 0 0 1-2.521-2.521v-2.521h2.521zM15.166 17.687a2.528 2.528 0 0 1-2.521-2.521 2.528 2.528 0 0 1 2.521-2.521h6.312A2.528 2.528 0 0 1 24 15.166a2.528 2.528 0 0 1-2.521 2.521h-6.313z"
       />
     </svg>
   </button>
@@ -2780,35 +2759,24 @@
       backBtn2.addEventListener("click", () =>
         window.scrollTo({ top: 0, behavior: "smooth" }),
       );
-    const waBtn = document.getElementById("whatsappBtn"),
-      waPopup = document.getElementById("whatsappPopup"),
-      waClose = document.getElementById("whatsappPopupClose"),
-      waSend = document.getElementById("whatsappSend"),
-      waMsg = document.getElementById("whatsappMsg");
-    waBtn.addEventListener("click", () => {
-      waPopup.classList.toggle("show"),
-        waPopup.classList.contains("show") && waMsg.focus();
+    const SLACK_URL =
+      "https://join.slack.com/t/personal-u2t4962/shared_invite/zt-45nfzkirn-_Z0o0svM~vTZ81na9oQ6PA";
+    const slBtn = document.getElementById("slackBtn"),
+      slPopup = document.getElementById("slackPopup"),
+      slClose = document.getElementById("slackPopupClose"),
+      slJoin = document.getElementById("slackJoin");
+    slBtn.addEventListener("click", () => {
+      slPopup.classList.toggle("show");
     }),
-      waClose.addEventListener("click", () => waPopup.classList.remove("show")),
-      waSend.addEventListener("click", () => {
-        const e = waMsg.value.trim();
-        e
-          ? (window.open(
-              "https://api.whatsapp.com/send?phone=9779803886597&text=" +
-                encodeURIComponent(e),
-              "_blank",
-            ),
-            waPopup.classList.remove("show"),
-            (waMsg.value = ""))
-          : waMsg.focus();
-      }),
-      waMsg.addEventListener("keydown", (e) => {
-        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), waSend.click());
+      slClose.addEventListener("click", () => slPopup.classList.remove("show")),
+      slJoin.addEventListener("click", () => {
+        window.open(SLACK_URL, "_blank", "noopener,noreferrer"),
+          slPopup.classList.remove("show");
       }),
       document.addEventListener("click", (e) => {
-        e.target.closest("#whatsappPopup") ||
-          e.target.closest("#whatsappBtn") ||
-          waPopup.classList.remove("show");
+        e.target.closest("#slackPopup") ||
+          e.target.closest("#slackBtn") ||
+          slPopup.classList.remove("show");
       });
   </script>
   </body>
