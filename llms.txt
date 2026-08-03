@@ -53,6 +53,15 @@ Hi, I'm Tufail Shah — a Graphic Designer & Marketer helping businesses stand o
 
 Foodmandu, Kirana, Lotao GmbH, Daraz Nepal
 
+## Blog
+
+Latest articles published at https://shahtufail.com.np/blog.html:
+
+- [The global memory shortage hits the MacBook Air](https://shahtufail.com.np/blog/article-macbook-air.html) — The global memory chip shortage is affecting the availability of Apple's most popular Mac.
+- [Apps that help you break free from doomscrolling and get active](https://shahtufail.com.np/blog/article-doomscroll-apps.html) — A roundup of apps that lock distracting apps until you walk, exercise, or even touch grass.
+- [Pixel 11 specs and price leak with no surprises](https://shahtufail.com.np/blog/article-pixel-11.html) — More confirmation that price hikes and RAM cuts are coming our way, courtesy of the global memory shortage.
+- [Is paying artists enough to convince them to embrace AI?](https://shahtufail.com.np/blog/article-pippa-ai.html) — Pippa is trying to entice artists with a revenue share system. But can paying artists overcome the creative theft inherent to gen AI?
+
 ## Contact
 
 - **Phone:** +977-9803886597
