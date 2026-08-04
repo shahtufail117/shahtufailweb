@@ -1,0 +1,19 @@
+/* ============================================================
+   styles.css — main stylesheet (aggregator)
+   ============================================================
+
+   Import order matters (later files override earlier ones):
+     1. tokens.css    — color variables & theme overrides
+     2. base.css      — reset, typography, utilities
+     3. layout.css    — navigation & mobile drawer
+     4. components.css— buttons, cards, sections, dialog, footer
+     5. blog.css      — blog listing page (blog.html)
+
+   Article pages additionally load css/article.css.
+   ============================================================ */
+
+@import url("tokens.css");
+@import url("base.css");
+@import url("layout.css");
+@import url("components.css");
+@import url("blog.css");

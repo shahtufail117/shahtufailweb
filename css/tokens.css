@@ -1,0 +1,199 @@
+/* ============================================================
+   TOKENS — color variables & theme overrides
+   ============================================================ */
+
+:root {
+  /* Surfaces */
+  --bg: #2d3250;
+  --section-alt: #424769;
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-bg-hover: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --card-border-top: rgba(255, 255, 255, 0.15);
+  --card-border-left: rgba(255, 255, 255, 0.12);
+
+  /* Text */
+  --text: #ffffff;
+  --text-sec: #c8c9d3;
+  --text-muted: #2d3250;
+  --menu-color: #ffffff;
+  --hero-p-color: #c8c9d3;
+  --nav-link: #676f7d;
+  --nav-link-hover: #ffffff;
+  --place-color: #c8c9d3;
+  --p-color: #c8c9d3;
+  --level-color: #ffffff;
+  --blockquote-color: #c8c9d3;
+  --role-color: #ffffff;
+  --contact-p: #c8c9d3;
+  --label-color: #ffffff;
+  --value-a: #ffffff;
+
+  /* Accent */
+  --accent: #fba17a;
+  --accent-2: #e8956a;
+  --accent-3: #d07a50;
+  --accent-grad: linear-gradient(135deg, var(--accent), var(--accent-2), var(--accent-3));
+  --accent-grad-2: linear-gradient(135deg, var(--accent), var(--accent-2));
+
+  /* Navigation */
+  --nav-bg: rgba(45, 50, 80, 0.92);
+  --nav-mobile: #2d3250;
+
+  /* Social / buttons */
+  --social-border: rgba(255, 255, 255, 0.12);
+  --social-color: #676f7d;
+  --btn-outline-border: rgba(255, 255, 255, 0.2);
+  --btn-outline-color: #ffffff;
+
+  /* Forms */
+  --form-input-bg: rgba(255, 255, 255, 0.06);
+  --form-input-border: rgba(255, 255, 255, 0.12);
+  --form-input-color: #ffffff;
+
+  /* Footer / scrollbar */
+  --footer-border: rgba(255, 255, 255, 0.08);
+  --footer-color: #ffffff;
+  --sc-track: #2d3250;
+  --sc-thumb: rgba(255, 255, 255, 0.12);
+
+  /* Dialog / modal */
+  --dialog-bg: rgba(35, 40, 66, 0.95);
+  --dialog-color: #ffffff;
+  --dialog-border: rgba(255, 255, 255, 0.1);
+  --modal-close-bg: rgba(255, 255, 255, 0.08);
+  --modal-close-color: #c8c9d3;
+  --backdrop-bg: rgba(0, 0, 0, 0.6);
+
+  /* Misc */
+  --shadow: rgba(0, 0, 0, 0.35);
+  --icon-shadow: rgba(0, 0, 0, 0.3);
+  --timeline-border: rgba(255, 255, 255, 0.1);
+  --dot-border: #2d3250;
+  --resume-sub: #2d3250;
+  --hero-before: rgba(251, 161, 122, 0.08);
+  --hero-after: rgba(232, 149, 106, 0.06);
+}
+
+/* ---- Light theme ---- */
+.light {
+  --bg: #ffffff;
+  --section-alt: #2d3250;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --card-bg-hover: rgba(255, 255, 255, 0.95);
+  --card-border: rgba(45, 50, 80, 0.1);
+  --card-border-top: rgba(255, 255, 255, 0.9);
+  --card-border-left: rgba(255, 255, 255, 0.8);
+
+  --text: #2d3250;
+  --text-sec: #2d3250;
+  --text-muted: #2d3250;
+  --menu-color: #2d3250;
+  --hero-p-color: #2d3250;
+  --nav-link: #2d3250;
+  --nav-link-hover: #2d3250;
+  --place-color: #2d3250;
+  --p-color: #2d3250;
+  --level-color: #2d3250;
+  --blockquote-color: #2d3250;
+  --role-color: #2d3250;
+  --contact-p: #2d3250;
+  --label-color: #2d3250;
+  --value-a: #2d3250;
+
+  --nav-bg: rgba(255, 255, 255, 0.92);
+  --nav-mobile: #ffffff;
+
+  --social-border: rgba(45, 50, 80, 0.12);
+  --social-color: #2d3250;
+  --btn-outline-border: rgba(45, 50, 80, 0.18);
+  --btn-outline-color: #2d3250;
+
+  --form-input-bg: rgba(255, 255, 255, 0.7);
+  --form-input-border: rgba(45, 50, 80, 0.12);
+  --form-input-color: #2d3250;
+
+  --footer-border: rgba(45, 50, 80, 0.08);
+  --footer-color: #2d3250;
+  --sc-track: #ffffff;
+  --sc-thumb: rgba(45, 50, 80, 0.12);
+
+  --dialog-bg: rgba(255, 255, 255, 0.97);
+  --dialog-color: #2d3250;
+  --dialog-border: rgba(45, 50, 80, 0.1);
+  --modal-close-bg: rgba(45, 50, 80, 0.06);
+  --modal-close-color: #2d3250;
+  --backdrop-bg: rgba(45, 50, 80, 0.4);
+
+  --shadow: rgba(45, 50, 80, 0.1);
+  --icon-shadow: rgba(45, 50, 80, 0.12);
+  --timeline-border: rgba(45, 50, 80, 0.1);
+  --dot-border: #ffffff;
+  --resume-sub: #2d3250;
+  --hero-before: rgba(251, 161, 122, 0.06);
+  --hero-after: rgba(232, 149, 106, 0.04);
+}
+
+/* ---- Dark-on-light sections (.section-alt inside light theme) ---- */
+.light .section-alt {
+  --text: #ffffff;
+  --text-sec: #ffffff;
+  --text-muted: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --card-bg-hover: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --card-border-top: rgba(255, 255, 255, 0.15);
+  --card-border-left: rgba(255, 255, 255, 0.12);
+  --btn-outline-border: rgba(255, 255, 255, 0.2);
+  --btn-outline-color: #ffffff;
+  --form-input-bg: rgba(255, 255, 255, 0.06);
+  --form-input-border: rgba(255, 255, 255, 0.12);
+  --form-input-color: #ffffff;
+  --timeline-border: rgba(255, 255, 255, 0.1);
+  --dot-border: #ffffff;
+  --p-color: #ffffff;
+  --place-color: #ffffff;
+  --blockquote-color: #ffffff;
+  --role-color: #ffffff;
+  --contact-p: #ffffff;
+  --label-color: #ffffff;
+  --value-a: #ffffff;
+  --nav-link: #ffffff;
+  --nav-link-hover: #ffffff;
+  color: #fff;
+}
+
+/* ---- Theme heading colors ---- */
+.light .section-alt h1,
+.light .section-alt h2,
+.light .section-alt h3,
+.light .section-alt h4 {
+  color: #fba17a;
+}
+
+.light .section-alt .section-label {
+  background: color-mix(in srgb, #fba17a 10%, transparent);
+  border-color: color-mix(in srgb, #fba17a 15%, transparent);
+  color: #fba17a;
+}
+
+.light .section-alt .portfolio-card .info .tag {
+  color: #fff;
+}
+
+/* ---- Section title accent colors ---- */
+.section-title:not(.gradient-text) {
+  color: #fba17a;
+}
+
+.section-title .gradient-text {
+  color: var(--accent);
+}
+
+.light .section-title:not(.gradient-text) {
+  color: #2d3250;
+}
+
+.light .section-alt .section-title:not(.gradient-text) {
+  color: #fba17a;
+}
