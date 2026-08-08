@@ -859,7 +859,7 @@ footer {
   font-size: 14px;
 }
 
-/* ---- Back to top, Slack, popup ---- */
+/* ---- Back to top ---- */
 #backToTop {
   position: fixed;
   bottom: 30px;
@@ -891,100 +891,6 @@ footer {
 
 @media (max-width: 576px) {
   #backToTop { bottom: 20px; right: 20px; width: 38px; height: 38px; font-size: 16px; }
-}
-
-#slackBtn {
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: #4a154b;
-  color: #fff;
-  border: 2px solid #fba17a;
-  cursor: pointer;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(74, 21, 75, 0.35);
-  transition: 0.3s;
-}
-
-#slackBtn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 30px rgba(74, 21, 75, 0.5);
-}
-
-#slackBtn:active {
-  transform: scale(0.93);
-}
-
-@media (max-width: 576px) {
-  #slackBtn { bottom: 20px; left: 20px; width: 44px; height: 44px; }
-}
-
-#slackPopup {
-  position: fixed;
-  bottom: 96px;
-  left: 30px;
-  width: 300px;
-  background: var(--dialog-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--dialog-border);
-  border-radius: 14px;
-  box-shadow: 0 16px 48px var(--shadow);
-  z-index: 998;
-  display: none;
-  overflow: hidden;
-  animation: dialog-in 0.25s ease-out;
-}
-
-#slackPopup.show {
-  display: block;
-}
-
-#slackPopupHeader {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 16px;
-  background: #4a154b;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-#slackPopupHeader span:last-child {
-  margin-left: auto;
-  cursor: pointer;
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.8;
-}
-
-#slackPopupHeader span:last-child:hover {
-  opacity: 1;
-}
-
-#slackPopupBody {
-  padding: 16px;
-}
-
-#slackPopupBody p {
-  font-size: 13px;
-  color: var(--text-sec);
-  margin-bottom: 12px;
-}
-
-#slackPopupBody .btn {
-  margin-top: 4px;
-}
-
-@media (max-width: 576px) {
-  #slackPopup { left: 16px; right: 16px; width: auto; bottom: 80px; }
 }
 
 /* ---- Scroll reveal ---- */

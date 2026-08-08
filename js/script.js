@@ -290,44 +290,7 @@
 })();
 
 /* ----------------------------------------------------------
-   SECTION 9 — Slack floating button & popup
-   ---------------------------------------------------------- */
-(function () {
-  const SLACK_URL =
-    "https://join.slack.com/t/personal-u2t4962/shared_invite/zt-45nfzkirn-_Z0o0svM~vTZ81na9oQ6PA";
-
-  const slBtn = document.getElementById("slackBtn");
-  const slPopup = document.getElementById("slackPopup");
-  const slClose = document.getElementById("slackPopupClose");
-  const slJoin = document.getElementById("slackJoin");
-
-  if (slBtn && slPopup) {
-    slBtn.addEventListener("click", () => slPopup.classList.toggle("show"));
-  }
-  if (slClose) {
-    slClose.addEventListener("click", () => slPopup.classList.remove("show"));
-  }
-  if (slJoin && slPopup) {
-    slJoin.addEventListener("click", () => {
-      window.open(SLACK_URL, "_blank", "noopener,noreferrer");
-      slPopup.classList.remove("show");
-    });
-  }
-
-  document.addEventListener("click", (e) => {
-    if (slPopup && slPopup.classList.contains("show")) {
-      if (
-        !e.target.closest("#slackPopup") &&
-        !e.target.closest("#slackBtn")
-      ) {
-        slPopup.classList.remove("show");
-      }
-    }
-  });
-})();
-
-/* ----------------------------------------------------------
-   SECTION 10 — Blog listing filter (blog.html)
+   SECTION 9 — Blog listing filter (blog.html)
    ---------------------------------------------------------- */
 (function () {
   const filterBtns = document.querySelectorAll(".blog-filter button");
@@ -350,7 +313,7 @@
 })();
 
 /* ----------------------------------------------------------
-   SECTION 11 — GTM consent banner (auto-dismisses after 10s)
+   SECTION 10 — GTM consent banner (auto-dismisses after 10s)
    ---------------------------------------------------------- */
 (function () {
   const banner = document.createElement("div");
