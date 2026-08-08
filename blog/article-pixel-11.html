@@ -213,18 +213,19 @@
   </footer>
   <script src="../js/script.js"></script>
   <script>
-    (function (d, t) {
-      var BASE_URL = "https://chat.shahtufail.com.np";
-      var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      g.src = BASE_URL + "/packs/js/sdk.js";
+    window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
+    (function(d,t) {
+      var BASE_URL="https://chat.shahtufail.com.np";
+      var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=BASE_URL+"/packs/js/sdk.js";
       g.async = true;
-      s.parentNode.insertBefore(g, s);
-      g.onload = function () {
+      s.parentNode.insertBefore(g,s);
+      g.onload=function(){
         window.chatwootSDK.run({
-          websiteToken: "Wfg33Z6e6cXdPXx25xDGYqUe",
-          baseUrl: BASE_URL,
-        });
-      };
-    })(document, "script");
+          websiteToken: 'Wfg33Z6e6cXdPXx25xDGYqUe',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document,"script");
   </script></body>
 </html>
