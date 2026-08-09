@@ -80,7 +80,7 @@
   });
 
   window.addEventListener("scroll", () => {
-    const y = window.scrollY;
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
     let current = "";
 
     for (let i = 0; i < sections.length; i++) {
